@@ -8,7 +8,6 @@ export default class Helper extends PureComponent {
   static propTypes = {
     title: PropTypes.string,
     error: PropTypes.string,
-    errorFontSize: PropTypes.number,
 
     disabled: PropTypes.bool,
 
@@ -71,7 +70,6 @@ export default class Helper extends PureComponent {
       disabled,
       baseColor,
       errorColor,
-      errorFontSize,
     } = this.props;
 
     let text = errored?
@@ -84,7 +82,6 @@ export default class Helper extends PureComponent {
 
     let textStyle = {
       opacity,
-      fontSize: errorFontSize,
 
       color: !disabled && errored?
         errorColor:

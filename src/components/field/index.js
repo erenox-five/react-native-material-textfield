@@ -48,7 +48,6 @@ export default class TextField extends PureComponent {
 
     fontSize: 16,
     labelFontSize: 12,
-    errorFontSize: 14,
 
     tintColor: 'rgb(0, 145, 234)',
     textColor: 'rgba(0, 0, 0, .87)',
@@ -73,7 +72,6 @@ export default class TextField extends PureComponent {
 
     fontSize: PropTypes.number,
     labelFontSize: PropTypes.number,
-    errorFontSize: PropTypes.number,
 
     contentInset: PropTypes.shape({
       top: PropTypes.number,
@@ -565,7 +563,6 @@ export default class TextField extends PureComponent {
       disabled,
       baseColor,
       errorColor,
-      errorFontSize,
       titleTextStyle: style,
       characterRestriction: limit,
     } = this.props;
@@ -583,7 +580,6 @@ export default class TextField extends PureComponent {
       style,
       baseColor,
       errorColor,
-      errorFontSize,
     };
 
     let counterProps = {
